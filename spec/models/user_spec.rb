@@ -12,18 +12,17 @@ RSpec.describe User, type: :model do
 
   it 'post_counter should be present' do
     subject.post_counter = 1
-    expect(subject.post_counter).to eq(5)
+    expect(subject.post_counter).to eq(1)
   end
 
   it 'post_counter should be an integer only' do
-    user1 = User.new(post_counter: 'a')
-    user1.valid?
-    expect(user1.errors[:post_counter]).to include('is not an integer')
+    subject.post_counter = 'a'
+    expect(subject.errors[:post_counter]).to include('is not a number')
   end
 
   it 'post_counter should be greater than or equal to zero' do
-    user1 = User.new(post_counter: -2)
-    user1.valid?
-    expect(user1.errors[:post_counter]).to include('must be greater than or equal to zero')
+    subject.post_counter = -2
+    subject.valid?
+    expect(subject.errors[:post_counter]).to include('must be greater than or equal to 0')
   end
 end
