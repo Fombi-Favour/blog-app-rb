@@ -25,7 +25,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
-  gem 'rspec-rails', '~> 6.1'
+  gem 'rspec-rails'
 end
 
 group :development do
