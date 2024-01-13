@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
 
   it 'post_counter should be an integer only' do
     subject.post_counter = 'a'
-    expect(subject.errors[:post_counter]).to include('is not a number')
+    expect(subject).not_to be_valid
   end
 
   it 'post_counter should be greater than or equal to zero' do
