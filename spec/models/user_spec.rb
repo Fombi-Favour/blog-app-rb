@@ -25,4 +25,15 @@ RSpec.describe User, type: :model do
     subject.valid?
     expect(subject.errors[:post_counter]).to include('must be greater than or equal to 0')
   end
+
+  describe 'recent post' do
+    before do
+      5.times do
+        Post.create(author_id: subject.id, title: 'title1', text: 'text1')
+      end
+    end
+    it 'should display recent post' do
+      expect(subject.recent_post).to eq subject.posts.limit(3).order(created_at: :desc)
+    end
+  end
 end
