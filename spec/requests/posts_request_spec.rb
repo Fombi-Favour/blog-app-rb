@@ -1,19 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  describe 'GET users/:id/posts' do
-    it 'renders a successful response' do
-      get '/users/1/posts'
-      expect(response).to be_successful
-      expect(response.status).to eq(200)
-      expect(response.body).to include('All posts list')
-    end
+  let(:user1) { User.new(id: 10) }
+  let(:post1) { Post.new(id: 22, author_id: user1.id) }
 
-    it 'renders a successful response for a single post' do
-      get '/users/1/posts/1'
+  describe 'GET /index' do
+    before { get user_posts_path(user1.id) }
+    it 'renders a successful response and correct template' do
       expect(response).to have_http_status(:success)
-      expect(response.status).to eq(200)
+      expect(response).to render_template(:index)
+      expect(response.body).to include('All Posts list')
+    end
+  end
+
+  describe 'GET /show' do
+    before { get user_post_path(post1.author_id, post1.id) }
+    it 'renders a successful response correct template' do
+      expect(response).to have_http_status(:success)
+      expect(response).to render_template(:show)
       expect(response.body).to include('Individual post')
     end
   end
-end
+ end
