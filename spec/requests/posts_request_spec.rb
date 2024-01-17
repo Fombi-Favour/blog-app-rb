@@ -21,4 +21,4 @@ RSpec.describe 'Posts', type: :request do
       expect(response.body).to include('Individual post')
     end
   end
- end
+end
