@@ -7,8 +7,6 @@ gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 
 gem 'rails', '~> 7.1.2'
 
-gem 'tailwindcss-rails', '~> 2.3'
-
 gem 'sprockets-rails'
 
 gem 'pg', '~> 1.1'
