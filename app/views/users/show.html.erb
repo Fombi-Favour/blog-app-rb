@@ -1,1 +1,20 @@
-<h1>Individual user</h1>
+<div class="main-profile">
+  <div>
+    <%= render partial: 'user_info', locals: { person: @user } %>
+  </div>
+
+  <div class="profile-bio">
+    <h1>Bio</h1>
+    <span> <%= @user.bio %> </span>
+  </div>
+
+  <div class="recent">
+    <% @user.recent_post.each do |recent| %>
+      <%= render partial: 'posts/post_info', locals: { person_post: recent } %>
+    <%end%>
+  </div>
+
+  <div class="see-all">
+    <%= link_to "See all posts", user_posts_path(@user) %>
+  </div>
+</div>
