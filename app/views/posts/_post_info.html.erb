@@ -2,7 +2,7 @@
   <%= link_to user_post_path(@user.id, person_post.id) do %>
     <h2><%= person_post.title %></h2>
   <%end%>
-  <span> <%= person_post.text.first(100) %> </span>
+  <span><%= person_post.text.first(140) %>...</span>
   <p class="counter">
     Comments: <%= person_post.comments_counter %>, Likes: <%= person_post.likes_counter %>
   </p>
