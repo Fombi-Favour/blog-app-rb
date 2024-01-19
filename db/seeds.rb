@@ -9,11 +9,11 @@
 #   end
 
 # Users information
-user1 = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-user2 = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
-user3 = User.create(name: 'Sandra', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Student from Poland.')
-user4 = User.create(name: 'Peter', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Politician from UK.')
-user5 = User.create(name: 'John', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from UK.')
+user1 = User.create(name: 'Tom', photo: 'image_profile.jpg', bio: 'Teacher from Mexico.')
+user2 = User.create(name: 'Lilly', photo: 'image_profile.jpg', bio: 'Teacher from Poland.')
+user3 = User.create(name: 'Sandra', photo: 'image_profile.jpg', bio: 'Student from Poland.')
+user4 = User.create(name: 'Peter', photo: 'image_profile.jpg', bio: 'Politician from UK.')
+user5 = User.create(name: 'John', photo: 'image_profile.jpg', bio: 'Teacher from UK.')
 
 #Posts information
 apost1 = Post.create(author: user1, title: 'Tom Post 1', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed quam vulputate, interdum eros vulputate, eleifend quam. Donec ultrices nibh non odio interdum, eu tincidunt mi porttitor. Donec sodales sem dui, non maximus nunc rutrum et. Vestibulum non lectus erat. Cras vehicula magna et lacus pharetra bibendum.')
