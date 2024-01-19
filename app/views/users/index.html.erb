@@ -1,5 +1,7 @@
-<div class="container">
+<section class="main-user">
   <% @users.each do |user| %>
-    <p> <%= user.name %> </p>
+    <%= link_to user_path(user.id) do %>
+      <%= render partial: 'user_info', locals: { person: user } %>
+    <%end%>
   <%end%>
-</div>
+</section>
