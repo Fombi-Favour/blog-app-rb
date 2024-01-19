@@ -1,1 +1,14 @@
-<h1>Individual post</h1>
+<div class="sub-post">
+  <div class="content">
+    <div class="content-title">
+      <h4> <%= @post.title %> by <%= @post.author.name %> </h4>
+      <span>
+        Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %>
+      </span>
+    </div>
+    <span class="desc"> <%= @post.text %> </span>
+  </div>
+  <div>
+    <%= render partial: 'comment_info', locals: { comments: @post.recent_comments } %>
+  </div>
+</div>

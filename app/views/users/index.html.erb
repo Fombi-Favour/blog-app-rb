@@ -1,1 +1,7 @@
-<h1>All Users list</h1>
+<section class="main-user">
+  <% @users.each do |user| %>
+    <%= link_to user_path(user.id) do %>
+      <%= render partial: 'user_info', locals: { person: user } %>
+    <%end%>
+  <%end%>
+</section>

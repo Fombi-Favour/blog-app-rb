@@ -19,10 +19,7 @@
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-**[Blog App]** is an Object-Oriented Programming Ruby project that keeps book records in the library and who borrows them. The app will you to:
-- Add new students or teachers.
-- Add new books.
-- Save records of who record a given book and when.
+**[Blog App]** is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,13 +32,27 @@
   </ul>
 </details>
 
+<details>
+<summary>backend framework</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Add students or teachers and view a list of students or teachers**
-- **Add new books and view a list of books**
-- **Save records of book rental**
+- **View list of users**
+- **View posts list**
+- **Add comments and likes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,6 +67,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - **Ruby installed on your PC**
+- **Rails installed on your PC**
 - **PostgreSQL installed on your PC**
 - **Any code editor or IDE**
 
@@ -65,8 +77,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  cd school-library-rb/
-  git clone https://github.com/Fombi-Favour/school-library-rb.git
+  cd blog-app-rb/
+  git clone https://github.com/Fombi-Favour/blog-app-rb.git
 ```
 
 ### Deployment
@@ -90,7 +102,7 @@ You can deploy this project using: [render](https://render.com/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **building a website for this app**
+- [ ] **Add styles to the website**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +112,7 @@ You can deploy this project using: [render](https://render.com/)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Fombi-Favour/school-library-rb/issues).
+Feel free to check the [issues page](https://github.com/Fombi-Favour/blog-app-rb/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

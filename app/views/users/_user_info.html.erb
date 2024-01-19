@@ -1,0 +1,9 @@
+<div class="details">
+  <div class="profile">
+    <%= image_tag 'image_profile.jpg', alt: "#{person.name} image" %>
+  </div>
+  <div class="profile-text">
+    <p class="profile-name"> <%= person.name %> </p>
+    <span class="post-num">Number of posts: <%= person.posts.size %> </span>
+  </div>
+</div>

@@ -1,1 +1,19 @@
-<h1>All Posts list</h1>
+<section class="main-post">
+  <div>
+    <%= render partial: 'users/user_info', locals: { person: @user } %>
+  </div>
+
+  <div>
+    <% @posts.each do |post| %>
+      <div>
+        <%= render partial: 'post_info', locals: { person_post: post } %>
+      </div>
+
+      <div class="comment">
+        <%= render partial: 'comment_info', locals: { comments: post.recent_comments } %>
+      </div>
+    <% end %>
+  </div>
+
+  <button class="btn-page"> Pagination </button>
+</section>
