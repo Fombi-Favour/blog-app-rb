@@ -1,4 +1,4 @@
-<section>
+<section class="main-post">
   <div>
     <%= render partial: 'users/user_info', locals: { person: @user } %>
   </div>
@@ -9,11 +9,11 @@
         <%= render partial: 'post_info', locals: { person_post: post } %>
       </div>
 
-      <div>
+      <div class="comment">
         <%= render partial: 'comment_info', locals: { comments: post.recent_comments } %>
       </div>
     <% end %>
   </div>
 
-  <button> Pagination </button>
+  <button class="btn-page"> Pagination </button>
 </section>
