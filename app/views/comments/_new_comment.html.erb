@@ -1,0 +1,9 @@
+<%= form_with model: [@post, @post.comments.build], method: :post, local: true do |form| %>
+  <h2>Add your comments</h2>
+  <div>
+    <%= form.label :text %>
+    <%= form.text_area :text, placeholder: 'say something about the post...', required: true %>
+  </div>
+
+  <%= form.submit 'Add comment', data: { disabled_with: 'loading...' } %>
+<%end%>
