@@ -5,7 +5,6 @@ class LikesController < ApplicationController
 
     return unless @like.save
 
-      redirect_to user_post_path(id: @post.id, user_id: @post.author_id), notice: '👍'
-    
+    redirect_to user_post_path(id: @post.id, user_id: @post.author_id), notice: '👍'
   end
 end
