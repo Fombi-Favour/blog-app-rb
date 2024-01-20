@@ -1,1 +1,3 @@
-<h2>new like</h2>
+<%= form_with model: [@post, @post.likes.build] do |forms| %>
+  <%= forms.submit 'Like', data: { disable_with: "❤️" } %>
+<%end%>
