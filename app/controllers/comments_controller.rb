@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
     @comment = Comment.create(text: comment_params[:text], author_id: current_user.id, post_id: @post.id)
 
     if @comment.save
-      redirect_to user_post_path(user_id: @post.author.id, post_id: @post.id), notice: 'Comment successfully created'
+      redirect_to user_post_path(id: @post.id, user_id: @post.author_id), notice: 'Comment successfully created'
     else
       render :new, alert: 'Error creating new comment'
     end
