@@ -1,0 +1,10 @@
+<%= render 'users/back' %>
+<%= form_with model: [@post.author, @post, @comment], local: true do |form| %>
+  <h2>Add your comments</h2>
+  <div>
+    <%= form.label :text %>
+    <%= form.text_area :text, placeholder: 'say something about the post...', required: true %>
+  </div>
+
+  <%= form.submit 'Add comment', data: { disabled_with: "loading..." } %>
+<%end%>
