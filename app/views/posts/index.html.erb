@@ -1,5 +1,12 @@
 <section class="main-post">
   <div>
+    <div>
+      <%= render 'users/home' %>
+      <%= render 'users/back' %>
+    </div>
+    <%= link_to 'New Post', new_user_post_path(@user.id) %>
+  </div>
+  <div>
     <%= render partial: 'users/user_info', locals: { person: @user } %>
   </div>
 
