@@ -10,5 +10,7 @@
   </div>
   <div>
     <%= render partial: 'comment_info', locals: { comments: @post.recent_comments } %>
+    <%= link_to 'Add comment', new_user_post_comment_path(@post.author, @post) %>
+    <%= render 'likes/new_like' %>
   </div>
 </div>
