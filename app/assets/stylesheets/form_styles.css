@@ -1,0 +1,55 @@
+.main-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 18px;
+}
+
+.main-field h2 {
+  padding-bottom: 8px;
+}
+
+.field,
+.field-me {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.field .name-field,
+.field .bio-field,
+.field .photo-field,
+.field .email-field,
+.field .pass-field,
+.actions .btn-submit {
+  width: 550px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  outline: none;
+  padding: 8px;
+}
+
+.field .name-field::placeholder,
+.field .bio-field::placeholder,
+.field .photo-field::placeholder,
+.field .email-field::placeholder,
+.field .pass-field::placeholder {
+  opacity: 0.7;
+}
+
+.field-me {
+  gap: 5px;
+  padding: 16px 0;
+}
+
+.actions .btn-submit {
+  background: transparent;
+  font-size: 1.025rem;
+  margin-bottom: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
