@@ -89,12 +89,23 @@ You can deploy this project using: [render](https://render.com/)
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Fombi Favour**
 
 - GitHub: [Fombi-Favour](https://github.com/Fombi-Favour)
 - LinkedIn: [Fombi Favour](https://www.linkedin.com/in/fombi-favour/)
+
+👤 **malikhaiderkhan**
+
+- GitHub: [@malikhaiderkhan](https://github.com/malikhaiderkhan)
+- Twitter: [@malikhaiderkha](https://twitter.com/malikhaiderkha)
+- LinkedIn: [@malikhaiderkhan](https://www.linkedin.com/in/malik-haider-khan-b53188140)
+
+👤 **George**
+
+- GitHub: [@githubhandle](https://github.com/George7h)
+- LinkedIn: <a href="https://www.linkedin.com/in/george-hamman-95b98224b/">George Hamman</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
